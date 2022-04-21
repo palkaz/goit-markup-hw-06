@@ -539,27 +539,45 @@ img {
 .footer-wrapper-form {
   margin-left: 93px;
 }
+/* форматирование формы подписки футер начало */
+.footer-form {
+  display: flex;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer-form input::placeholder {
+  padding-left: 16px;
+}
 
 .footer-input {
   width: 358px;
-  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--background-hero-footer);
 }
 
+/* .footer-input :focus-visible {
+  border-color: 5px solid rgba(250, 1, 1, 0.966);
+} */
+
 .footer-btn {
   width: 200px;
-  height: 50px;
   margin-left: 12px;
 
+  color: var(--header-hero-color);
+  background-color: var(--accent-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  cursor: pointer;
 }
+
+/* форматирование формы подписки футер конец */
 
 .portfolio-btn {
   background: var(--background-btn-filter);
