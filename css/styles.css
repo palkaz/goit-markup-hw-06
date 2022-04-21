@@ -552,15 +552,22 @@ img {
   padding-left: 16px;
 }
 
+.footer-form button:hover,
+.footer-form button:focus {
+  background-color: var(--accent-color-hover);
+}
+
 .footer-input {
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  color: var(--header-hero-color);
   background-color: var(--background-hero-footer);
 }
 
-/* .footer-input :focus-visible {
+/* .footer-form input:focus-visible {
   border-color: 5px solid rgba(250, 1, 1, 0.966);
 } */
 
@@ -570,12 +577,17 @@ img {
 
   color: var(--header-hero-color);
   background-color: var(--accent-color);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--footer-form-border);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transition: background-color var(--animation), filter var(--animation);
 
   cursor: pointer;
 }
+
+/* .footer-btn :focus {
+  border-color: 5px solid rgba(250, 1, 1, 0.966);
+} */
 
 /* форматирование формы подписки футер конец */
 
