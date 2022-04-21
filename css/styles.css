@@ -778,8 +778,8 @@ p.cards-overlay {
 
   transform: translate(-50%, -50%);
 
-  min-height: 528px;
-  min-width: 571px;
+  min-height: 581px;
+  min-width: 528px;
   padding: 30px;
 
   /* цвет текста */
@@ -806,4 +806,13 @@ p.cards-overlay {
   background-color: rgba(255, 255, 255, 0);
 
   cursor: pointer;
+}
+
+.form-field {
+  width: 448px;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  /* box-sizing: border-box; */
+  border-radius: 4px;
 }
