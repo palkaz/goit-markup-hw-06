@@ -874,12 +874,28 @@ textarea {
   margin-top: 25px;
 }
 
-.form-field.checkbox input[type="checkbox"] {
-  color: 1px solid rgba(33, 33, 33, 1);
-}
-
 .checkbox-label {
   margin-left: 8px;
 
   color: rgba(117, 117, 117, 1);
+}
+
+.form-field-btn {
+  text-transform: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+
+  color: #fff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border-color: rgb(0 0 0 / 0%);
 }
