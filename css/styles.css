@@ -800,13 +800,19 @@ p.cards-overlay {
   min-width: 30px;
 
   /* color icon close */
-  border: 0;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0);
 
   cursor: pointer;
 }
+
+.icon-close:focus,
+.icon-close:hover {
+  fill: var(--accent-color);
+  transition: fill var(--animation);
+}
+
 /* форматирование формы героя */
 textarea {
   resize: none;
@@ -882,9 +888,7 @@ textarea {
 
 .checkbox-link {
   color: var(--accent-color);
-  text-decoration: underline var(--accent-color-hover);
-  /* border-bottom: 1px solid var(--accent-color);
-  height: 1px; */
+  text-decoration: underline var(--accent-color);
 }
 
 .form-field-btn {
@@ -900,11 +904,18 @@ textarea {
   font-size: 16px;
   letter-spacing: 0.06em;
 
-  color: #fff;
-  background: #188ce8;
+  color: var(--header-hero-color);
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: rgb(0 0 0 / 0%);
 
   cursor: pointer;
+
+  transition: color var(--animation);
+}
+
+.form-field-btn:focus,
+.form-field-btn:hover {
+  background: var(--accent-color-hover);
 }
