@@ -96,7 +96,7 @@
                       type="text"
                       name="name"
                       id="name"
-                      autocomplete="of"
+                      autocomplete="off"
                     />
                     <svg class="icon-input" width="18px" height="18px">
                       <use
@@ -129,7 +129,7 @@
                       type="email"
                       name="email"
                       id="email"
-                      autocomplete="of"
+                      autocomplete="off"
                     />
                     <svg class="icon-input" width="18px" height="18px">
                       <use
@@ -146,20 +146,25 @@
                     class="textarea-form-field comment"
                     name="comment"
                     id="comment"
-                    cols="comment"
                     placeholder="Введите текст"
                   ></textarea>
                 </div>
                 <div class="form-field checkbox">
-                  <input
-                    class="checkbox-input"
-                    type="checkbox"
-                    name=""
-                    value="checkbox"
-                    id="checkbox"
-                  />
-                  <label class="checkbox-label" for="checkbox"
-                    >Соглашаюсь с рассылкой и принимаю
+                  <label class="checkbox-label" for="checkbox">
+                    <input
+                      class="checkbox-input"
+                      type="checkbox"
+                      name="checkbox"
+                      value="checkbox"
+                      id="checkbox"
+                    />
+                    <span class="icon-checkbox"
+                      ><svg class="icon-check" width="16px" height="16px">
+                        <use
+                          href="./images/symbol-defs-all.svg#icon-check"
+                        ></use></svg
+                    ></span>
+                    Соглашаюсь с рассылкой и принимаю
                     <a href="#" class="checkbox-link link"
                       >Условия договора</a
                     ></label
