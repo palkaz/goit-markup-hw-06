@@ -575,6 +575,7 @@ img {
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   font-family: roboto, bold;
   font-weight: 700;
