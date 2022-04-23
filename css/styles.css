@@ -793,6 +793,9 @@ p.cards-overlay {
 
 .modal-btn {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 8px;
   right: 8px;
   padding: 0;
@@ -807,8 +810,8 @@ p.cards-overlay {
   cursor: pointer;
 }
 
-.icon-close :focus,
-.icon-close :hover {
+.modal-btn :focus,
+.modal-btn :hover {
   fill: var(--accent-color);
   transition: fill var(--animation);
 }
@@ -822,14 +825,6 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  /* outline: 1px solid rgba(64, 6, 224, 0.315);
-  border-radius: 4px; */
-  /* width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px; */
 }
 
 .form-field-title {
@@ -843,8 +838,34 @@ textarea {
 .textarea-form-field {
   width: 100%;
   height: 40px;
+  padding-left: 42px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.form-wrapper-input {
+  position: relative;
+  width: 100%;
+}
+
+.icon-input {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-left: 12px;
+}
+.form-filed-input:focus-visible,
+.textarea-form-field:focus-visible {
+  outline: 1px solid var(--accent-color);
+  transition: var(--animation);
+}
+
+/* цвет иконки в инпуте пр фокусе */
+.form-field :focus-within > .icon-input {
+  fill: var(--accent-color);
+  transition: var(--animation);
 }
 
 .form-filed-label {
