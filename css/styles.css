@@ -723,7 +723,7 @@ img {
 
 /* контейнер для текста на карточке */
 .portfolio-box-text {
-  content: "";
+  content: " ";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -807,8 +807,8 @@ p.cards-overlay {
   cursor: pointer;
 }
 
-.icon-close:focus,
-.icon-close:hover {
+.icon-close :focus,
+.icon-close :hover {
   fill: var(--accent-color);
   transition: fill var(--animation);
 }
