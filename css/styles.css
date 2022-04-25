@@ -803,8 +803,8 @@ p.cards-overlay {
   cursor: pointer;
 }
 
-.modal-btn :focus,
-.modal-btn :hover {
+.modal-btn:focus,
+.modal-btn:hover {
   fill: var(--accent-color);
   transition: fill var(--animation);
 }
