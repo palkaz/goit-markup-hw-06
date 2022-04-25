@@ -743,6 +743,9 @@ p.cards-overlay {
 /* модальное окно */
 .backdrop {
   position: fixed;
+  /* нужен чтобы на форма в футере не наезжала */
+  z-index: 1;
+
   overflow: hidden;
   top: 0;
   left: 0;
